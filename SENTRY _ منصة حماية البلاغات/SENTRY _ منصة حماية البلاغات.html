@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0104)file:///C:/Users/HAIL-C/AppData/Local/Temp/a395dd19-40e1-41e5-ad5c-ab38423ca535_index.zip.535/index.html -->
+<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <title>SENTRY | منصة حماية البلاغات</title>
     <style>
         /* --- ألوان وخطوط رسمية --- */
@@ -10,11 +10,13 @@
             font-family: Arial, sans-serif;
             padding: 20px;
         }
+
         section {
             padding: 40px 20px;
             max-width: 900px;
             margin: auto;
         }
+
         .card {
             background: #ffffff;
             border-left: 6px solid #047857;
@@ -24,23 +26,28 @@
             box-shadow: 0 6px 12px rgba(0,0,0,0.08);
             transition: transform 0.3s, box-shadow 0.3s;
         }
+
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 12px 24px rgba(0,0,0,0.15);
         }
+
         h2 {
             color: #065f46;
             margin-top: 0;
         }
+
         ul {
             padding-left: 20px;
         }
+
         input, textarea {
             border: 1px solid #10b981;
             border-radius: 6px;
             padding: 8px;
             font-size: 14px;
         }
+
         button {
             background:#047857; 
             color:white; 
@@ -50,14 +57,17 @@
             cursor:pointer;
             transition: background 0.3s;
         }
+
         button:hover {
             background: #065f46;
         }
+
         #result, #reportOutput {
             margin-top: 15px;
             font-weight: bold;
             font-size: 16px;
         }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -65,6 +75,8 @@
             color: #065f46;
             border-top: 2px solid #10b981;
         }
+
+        /* تأثير خلفية متدرجة خفيف */
         body::before {
             content: '';
             position: fixed;
@@ -74,25 +86,47 @@
             z-index: -1;
             animation: moveBg 20s linear infinite;
         }
+
         @keyframes moveBg {
             0% {background-position: 0 0;}
             100% {background-position: 1000px 1000px;}
         }
     </style>
 </head>
+
 <body>
-<header style="display:flex; align-items:center; justify-content:flex-start; gap:15px; padding:10px 20px; background:#f0fdf4; border-bottom:2px solid #047857;">
-    <img src="https://amanathail.gov.sa/new_portal/assets/images/logo1.png" alt="شعار أمانة منطقة حائل" style="height:60px;">
+
+<header style="
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:15px;
+    padding:10px 20px;
+    background:#f0fdf4; /* خلفية فاتحة متناسقة مع الأخضر */
+    border-bottom:2px solid #047857;
+">
+    <!-- الشعار -->
+    <img src="./SENTRY _ منصة حماية البلاغات_files/logo1.png" alt="شعار أمانة منطقة حائل" style="height:60px;">
+
+    <!-- اسم المنصة -->
     <div>
         <h1 style="margin:0; color:#047857; font-family:Arial, sans-serif;">SENTRY</h1>
         <p style="margin:0; color:#065f46; font-size:14px;">منصة حماية البلاغات البلدية ذكية</p>
     </div>
 </header>
+
 <section>
+    <!-- عن المنصة -->
     <div class="card">
         <h2>عن المنصة</h2>
-        <p>منصة SENTRY تهدف إلى حماية خدمات البلاغات البلدية من الإساءة والاستخدام غير القانوني من خلال تحليل البيانات وسلوك المستخدمين. تساعد المنصة الجهات البلدية على تحسين جودة البلاغات وتقليل الأخطاء.</p>
+        <p>
+            منصة SENTRY تهدف إلى حماية خدمات البلاغات البلدية من الإساءة
+            والاستخدام غير القانوني من خلال تحليل البيانات وسلوك المستخدمين.
+            تساعد المنصة الجهات البلدية على تحسين جودة البلاغات وتقليل الأخطاء.
+        </p>
     </div>
+
+    <!-- الفوائد الرئيسية -->
     <div class="card">
         <h2>الفوائد الرئيسية</h2>
         <ul>
@@ -102,6 +136,8 @@
             <li>تقديم تقارير دقيقة عن المخاطر والسلوكيات المشبوهة.</li>
         </ul>
     </div>
+
+    <!-- المزايا التقنية -->
     <div class="card">
         <h2>المزايا التقنية</h2>
         <ul>
@@ -111,48 +147,96 @@
             <li>واجهة استخدام بسيطة وسريعة للجهات المختصة.</li>
         </ul>
     </div>
+
+    <!-- نموذج رفع البلاغ -->
     <div class="card">
         <div style="max-width:600px; margin-bottom:20px;">
             <h2>رفع بلاغ جديد</h2>
             <form id="reportForm">
                 <label>عنوان البلاغ:</label><br>
-                <input type="text" id="title" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+                <input type="text" id="title" required="" style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
                 <label>وصف البلاغ:</label><br>
-                <textarea id="description" required style="width:100%; padding:8px; margin-bottom:10px;"></textarea><br>
+                <textarea id="description" required="" style="width:100%; padding:8px; margin-bottom:10px;"></textarea><br>
+
                 <label>موقع البلاغ:</label><br>
-                <input type="text" id="location" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+                <input type="text" id="location" required="" style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
                 <label>رابط صورة البلاغ:</label><br>
                 <input type="url" id="imageLink" placeholder="https://example.com/image.jpg" style="width:100%; padding:8px; margin-bottom:10px;"><br>
-                <button type="submit" style="background:#047857; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">رفع البلاغ</button>
+
+                <button type="submit" style="
+                    background:#047857; color:white; padding:10px 20px; border:none; border-radius:5px;
+                    cursor:pointer;
+                ">رفع البلاغ</button>
             </form>
         </div>
-        <div id="responseMessage" style="display:none; border-left:6px solid #047857; background: #d1fae5; padding: 15px 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); font-family: Arial, sans-serif; color: #065f46; max-width: 600px;">
+
+        <!-- الرسالة التلقائية -->
+        <div id="responseMessage" style="
+            display:none;
+            border-left:6px solid #047857;
+            background: #d1fae5;
+            padding: 15px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            font-family: Arial, sans-serif;
+            color: #065f46;
+            max-width: 600px;
+        ">
             <h3 style="margin-top:0; color:#047857;">رد من أمانة منطقة حائل</h3>
-            <p style="line-height:1.6; font-size:16px;">سيتم حل مشكلتكم في أقرب وقت ممكن. <br>تم إرسال البلاغ للجهات المنفذة وسيتم تزويدكم بصور عند الانتهاء، لضمان تقفيل البلاغ برضاء الطرفين.</p>
+            <p style="line-height:1.6; font-size:16px;">
+                سيتم حل مشكلتكم في أقرب وقت ممكن. <br>
+                تم إرسال البلاغ للجهات المنفذة وسيتم تزويدكم بصور عند الانتهاء، 
+                لضمان تقفيل البلاغ برضاء الطرفين.
+            </p>
             <div id="reportImage" style="margin-top:15px; text-align:center;"></div>
         </div>
-    </div>
+    </div>    <!-- تجربة تقييم المخاطر -->
     <div class="card">
         <h2>تقييم المخاطر (تجريبي)</h2>
         <p>اضغط الزر لتجربة نموذج تقييم المخاطر</p>
         <button onclick="analyze()">تحليل البلاغ</button>
         <p id="result"></p>
     </div>
-    <div class="card" style="text-align:center; border-left:6px solid #047857; background: linear-gradient(145deg, #d1fae5, #ffffff); box-shadow: 0 6px 12px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;">
+
+    <!-- خاتمة الموقع -->
+    <div class="card" style="
+        text-align:center; 
+        border-left:6px solid #047857; 
+        background: linear-gradient(145deg, #d1fae5, #ffffff);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+    ">
         <h2 style="color:#065f46;">خاتمة</h2>
-        <p style="font-size:16px; line-height:1.6; color:#065f46;">نشكركم على تجربة منصة <strong>SENTRY</strong> للبلاغات البلدية. <br>هذه النسخة التجريبية تم تطويرها بواسطة <strong>آمال عيد الحربي</strong> لعرض فكرة المشروع بشكل عملي وتفاعلي.</p>
-        <p style="font-size:16px; line-height:1.6; color:#065f46;">نطمح في المستقبل لإضافة قاعدة بيانات ومعالجة البلاغات بشكل آلي لتقديم تجربة أكثر قوة واحترافية.</p>
-        <p style="font-size:14px; color:#047857; margin-top:15px;">©️ 2026 آمال عيد الحربي - جميع الحقوق محفوظة</p>
+        <p style="font-size:16px; line-height:1.6; color:#065f46;">
+            نشكركم على تجربة منصة <strong>SENTRY</strong> للبلاغات البلدية. <br>
+            هذه النسخة التجريبية تم تطويرها بواسطة <strong>آمال عيد الحربي</strong> لعرض فكرة المشروع بشكل عملي وتفاعلي.
+        </p>
+        <p style="font-size:16px; line-height:1.6; color:#065f46;">
+            نطمح في المستقبل لإضافة قاعدة بيانات ومعالجة البلاغات بشكل آلي لتقديم تجربة أكثر قوة واحترافية.
+        </p>
+        <p style="font-size:14px; color:#047857; margin-top:15px;">
+            © 2026 آمال عيد الحربي - جميع الحقوق محفوظة
+        </p>
     </div>
 </section>
-<footer>©️ 2026 SENTRY - Hackathon Prototype</footer>
+
+<footer>
+    © 2026 SENTRY - Hackathon Prototype
+</footer>
+
 <script>
     const form = document.getElementById('reportForm');
     const response = document.getElementById('responseMessage');
     const reportImage = document.getElementById('reportImage');
+
     form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        form.style.display = 'none';
+        e.preventDefault(); // يمنع إعادة تحميل الصفحة
+        form.style.display = 'none'; // إخفاء النموذج بعد الإرسال
+
+        // عرض الصورة إذا وضع المستخدم رابطها
         const imgLink = document.getElementById('imageLink').value;
         if(imgLink) {
             const img = document.createElement('img');
@@ -163,13 +247,19 @@
             img.style.boxShadow = "0 4px 8px rgba(0,0,0,0.1)";
             reportImage.appendChild(img);
         }
+
+        // إظهار رسالة الرد
         response.style.display = 'block';
     });
+
+    // زر تقييم المخاطر تجريبي
     function analyze() {
         const scores = ["منخفض", "متوسط", "مرتفع"];
         const randomScore = scores[Math.floor(Math.random() * scores.length)];
         document.getElementById("result").innerText = "نتيجة تقييم المخاطر: " + randomScore;
     }
+
+    // تأثير بسيط عند المرور على البطاقة
     const footerCard = document.querySelector(".card:last-child");
     footerCard.addEventListener("mouseover", () => {
         footerCard.style.transform = "translateY(-5px)";
@@ -180,5 +270,6 @@
         footerCard.style.boxShadow = "0 6px 12px rgba(0,0,0,0.08)";
     });
 </script>
-</body>
-</html>
+
+
+</body></html>
